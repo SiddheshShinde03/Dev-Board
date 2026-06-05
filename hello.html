@@ -1,0 +1,110 @@
+ :set paste
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevBoard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#5b21b6,#7c3aed,#a855f7);
+color:white;
+}
+
+.card{
+width:350px;
+padding:35px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.1);
+text-align:center;
+box-shadow:0 8px 30px rgba(0,0,0,.2);
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+p{
+opacity:.9;
+margin-bottom:25px;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+margin-bottom:25px;
+}
+
+.box{
+background:rgba(255,255,255,.12);
+padding:12px;
+border-radius:12px;
+width:30%;
+}
+
+button{
+border:none;
+padding:12px 24px;
+border-radius:10px;
+background:white;
+color:#6d28d9;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>DevBoard</h1>
+
+<p>Track tasks, tickets & developer workflow.</p>
+
+<div class="stats">
+
+<div class="box">
+<h3>14</h3>
+<small>Tasks</small>
+</div>
+
+<div class="box">
+<h3>6</h3>
+<small>Tickets</small>
+</div>
+
+<div class="box">
+<h3>4</h3>
+<small>Done</small>
+</div>
+
+</div>
+
+<button>Open Dashboard</button>
+
+</div>
+
+</body>
+</html>
